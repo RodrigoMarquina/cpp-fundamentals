@@ -29,6 +29,12 @@ int recurseToGoal(int y){ //Recursion
   return recurseToGoal(y + 1);
 }
 
+//Templates
+template <typename T>
+T add(T a, T b){
+  return a + b;
+}
+
 int runFunctions() {
   //cout << increaseByTen(0) << endl;
 
@@ -39,6 +45,10 @@ int runFunctions() {
   int y = 1;
 
   cout << recurseToGoal(y) << endl;
+
+  cout << add(3,4) << endl;           // add<int>(5, 3)
+
+  cout << add(2.4,5.7) << endl;
 
   return 0;
 

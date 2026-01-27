@@ -14,6 +14,11 @@ void runStructures();
 void runEnums();
 void runReferences();
 void runPointers();
+void runExceptions();
+void runClassesObjects();
+void runInheritance();
+void runPolymorphism();
+void runFiles();
 void runTest();
 
 int main(int argc, char** argv) {
@@ -30,6 +35,11 @@ int main(int argc, char** argv) {
         "Enums = 8 \n "
         "References = 9 \n "
         "Pointers = 10 \n ";
+        "Exceptions = 11 \n"
+        "Objects & Classes = 12 \n ";
+        "Inheritance = 13 \n ";
+        "Polymorphism = 14 \n ";
+        "Files = 15 \n ";
         return 1;
     }
 
@@ -57,6 +67,16 @@ int main(int argc, char** argv) {
         runReferences();
     } else if (mode == "10") {
         runPointers();
+    } else if (mode == "11") {
+        runExceptions();
+    } else if (mode == "12") {
+        runClassesObjects();
+    } else if (mode == "13") {
+        runInheritance();
+    } else if (mode == "14") {
+        runPolymorphism();
+    } else if (mode == "15") {
+        runFiles();
     } else {
         cout << "Unknown mode\n";
     }
