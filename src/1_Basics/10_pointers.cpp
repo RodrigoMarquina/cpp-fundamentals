@@ -35,4 +35,28 @@ int runPointers() {
     return 0;
 }
 
+/*
+Node -> entity
 
+Node* -> wire
+
+setNext(Node*) -> connect wire
+
+getNext() -> inspect wire
+
+________________________________________
+
+Compare:
+Node<N> node;
+node.setNext(...);    // object
+
+vs
+
+Node<N>* node;
+node->setNext(...);   // pointer
+
+These are equivalent:
+
+node->setNext(x);
+(*node).setNext(x);
+*/

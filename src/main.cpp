@@ -1,3 +1,5 @@
+//#include "node.hpp"
+
 #include <iostream>
 #include <string>
 
@@ -19,6 +21,7 @@ void runClassesObjects();
 void runInheritance();
 void runPolymorphism();
 void runFiles();
+void runLinkedList();
 void runTest();
 
 int main(int argc, char** argv) {
@@ -40,6 +43,7 @@ int main(int argc, char** argv) {
         "Inheritance = 13 \n ";
         "Polymorphism = 14 \n ";
         "Files = 15 \n ";
+        "Linked List = 16 \n ";
         return 1;
     }
 
@@ -77,6 +81,8 @@ int main(int argc, char** argv) {
         runPolymorphism();
     } else if (mode == "15") {
         runFiles();
+    } else if (mode == "16") {
+        runLinkedList();
     } else {
         cout << "Unknown mode\n";
     }

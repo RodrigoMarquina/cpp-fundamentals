@@ -21,5 +21,7 @@ add_executable(cpp_fundamentals
     src/2_OOP/13_inheritance.cpp
     src/2_OOP/14_polymorphism.cpp
     src/2_OOP/15_files.cpp
+    src/3_DataStructures/16_linked_list.cpp
+    src/3_DataStructures/node.hpp
     src/test.cpp
 )
